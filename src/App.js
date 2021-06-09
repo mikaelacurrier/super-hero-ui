@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import react, {useState, useEffect} from 'react';
 import './App.css';
+import Heroes from './components/heroes';
+import {fetchData, filtered} from './utils/heros'
 
-function App() {
+
+export default () => {
+  const [heroesData, setHeroesData] = useState([])
+  const [filteredHeroes, setFilteredHeroes] = useState([])
+  const [searchTerm, setSearchTerm] = useState('')
+
+  useEffect(() => {
+    async function pullData() {
+      // const { data } = await axios.get('http://localhost:1337/api')
+      const data = await fetchData()
+
+      setHeroesData(data)
+      setFilteredHeroes(data)
+    }
+
+    pullData()
+  }, [])
+
+  useEffect(() => {
+
+    const heroes = filtered(heroesData, searchTerm)
+    // const filtered = heroesData.filter(hero => {
+    //   return hero.name.toLowerCase().includes(searchTerm.toLowerCase())
+    // })
+
+    setFilteredHeroes(heroes)
+
+  }, [searchTerm])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Heroes 
+        heroesDataAsProps={filteredHeroes}
+        setSearchTerm={setSearchTerm}
+      />
+    </>
   );
 }
-
-export default App;
