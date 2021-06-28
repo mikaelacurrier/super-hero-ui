@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mikaelacurrier/super-hero-ui/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/mikaelacurrier/super-hero-ui/static/js/main.7fbbf7b8.chunk.js",
+    "main.js.map": "/mikaelacurrier/super-hero-ui/static/js/main.7fbbf7b8.chunk.js.map",
+    "runtime-main.js": "/mikaelacurrier/super-hero-ui/static/js/runtime-main.ba84913b.js",
+    "runtime-main.js.map": "/mikaelacurrier/super-hero-ui/static/js/runtime-main.ba84913b.js.map",
+    "static/js/2.d3866a10.chunk.js": "/mikaelacurrier/super-hero-ui/static/js/2.d3866a10.chunk.js",
+    "static/js/2.d3866a10.chunk.js.map": "/mikaelacurrier/super-hero-ui/static/js/2.d3866a10.chunk.js.map",
+    "static/js/3.1ebc1f66.chunk.js": "/mikaelacurrier/super-hero-ui/static/js/3.1ebc1f66.chunk.js",
+    "static/js/3.1ebc1f66.chunk.js.map": "/mikaelacurrier/super-hero-ui/static/js/3.1ebc1f66.chunk.js.map",
+    "index.html": "/mikaelacurrier/super-hero-ui/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/mikaelacurrier/super-hero-ui/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.d3866a10.chunk.js.LICENSE.txt": "/mikaelacurrier/super-hero-ui/static/js/2.d3866a10.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba84913b.js",
+    "static/js/2.d3866a10.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.7fbbf7b8.chunk.js"
+  ]
+}
